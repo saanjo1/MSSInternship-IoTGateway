@@ -1,0 +1,29 @@
+version: "3.9"
+services:
+  rabbitmq3:
+        container_name: "rabbitmq"
+        image: https://internship2022-mq.mss.ba/#/
+        environment:
+            - RABBITMQ_DEFAULT_USER=guest
+            - RABBITMQ_DEFAULT_PASS=guest
+        ports:
+            # AMQP protocol port
+            - '5672:5672'
+            # HTTP management UI
+            - '15672:15672'
+  web:
+    build: 
+      context: .
+      dockerfile: Dockerfile.ConsoleApp
+    image: registry.mss.ba/internship2022-iotgw-driver
+    environment: 
+      -  ASPNETCORE_URLS=http://+:80
+      - SecurityKey=20482048
+      -  AzureTableStorage=DefaultEndpointsProtocol=https;AccountName=tablestrg21;AccountKey=aYBTaQIqFVdXTPEKBarbd0U7frkAV9X8plbYhfP6Kg5cL1p34snMxM/5l3l8VJ5KtsqP7vLUju15Rs32IdbPKg==;EndpointSuffix=core.windows.net
+      -  QueueName=IoT-Devicesv1
+      -  HostName=localhost
+      -  TableName=IoT-Devices02
+    ports:
+      - "81:80"
+  redis:
+    image: "redis:alpine"

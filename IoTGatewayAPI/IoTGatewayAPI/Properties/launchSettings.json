@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json.schemastore.org/launchsettings.json",
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:24908",
+      "sslPort": 44336
+    }
+  },
+  "profiles": {
+    "IoTGatewayAPI": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Production",
+        "HostName": "internship2022-mq.mss.ba",
+        "Port": "5672",
+        "Password": "M5k&LXBhXvjH6w",
+        "UserName": "guest",
+        "QueueName": "IotDevicesQ",
+        "AzureTableStorage": "DefaultEndpointsProtocol=https;AccountName=tablestrg21;AccountKey=aYBTaQIqFVdXTPEKBarbd0U7frkAV9X8plbYhfP6Kg5cL1p34snMxM/5l3l8VJ5KtsqP7vLUju15Rs32IdbPKg==;EndpointSuffix=core.windows.net",
+        "TableName": "IoTDevices01",
+        "SecurityKey": "20482048"
+      },
+      "applicationUrl": "https://localhost:7111;http://localhost:5111",
+      "dotnetRunMessages": true
+    },
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}

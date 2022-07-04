@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32407.343
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IoTGatewayAPI", "IoTGatewayAPI\IoTGatewayAPI.csproj", "{DF77A6EE-16F4-4621-A477-438BB8EE6D30}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IoT-ConsoleApp", "IoT-ConsoleApp\IoT-ConsoleApp.csproj", "{2439ECCA-0ACC-4ED3-BBE9-C5CBADD15D12}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DF77A6EE-16F4-4621-A477-438BB8EE6D30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF77A6EE-16F4-4621-A477-438BB8EE6D30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF77A6EE-16F4-4621-A477-438BB8EE6D30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF77A6EE-16F4-4621-A477-438BB8EE6D30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2439ECCA-0ACC-4ED3-BBE9-C5CBADD15D12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2439ECCA-0ACC-4ED3-BBE9-C5CBADD15D12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2439ECCA-0ACC-4ED3-BBE9-C5CBADD15D12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2439ECCA-0ACC-4ED3-BBE9-C5CBADD15D12}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2A5C535A-AFE6-48C4-979E-0027A6C421AC}
+	EndGlobalSection
+EndGlobal
